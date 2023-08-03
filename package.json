@@ -15,7 +15,7 @@
     "node": ">=14.18.0"
   },
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/tailwind-css/input.css -o ./src/tailwind-css/output.css --watch && vite",
+    "dev": "vite & npx tailwindcss -i ./src/tailwind-css/input.css -o ./src/tailwind-css/output.css --watch",
     "build": "npx tailwindcss -i ./src/tailwind-css/input.css -o ./src/tailwind-css/output.css && tsc && vite build",
     "preview": "vite preview",
     "fmt": "prettier --write '**/*.{tsx,ts,json,css,scss,md}'",
